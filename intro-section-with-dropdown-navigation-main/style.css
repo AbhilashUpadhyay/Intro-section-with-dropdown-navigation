@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Epilogue', sans-serif;
+    
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(0, 0%, 98%);
+
+
+}
+nav{
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    color: hsl(0, 0%, 41%);
+    align-items: center;
+    
+
+
+}
+.nav-right , .nav-left{
+    display: flex;
+
+
+}
+ul{
+    display: flex;
+    list-style: none;
+
+}
+li{
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size:14px;
+    display: flex;
+    align-items: center;
+}
+li:hover{
+    color: black;
+    font:bold;
+}
+.login{
+    padding: 10px 15px;
+    cursor: pointer;
+
+}
+#register{
+    border-radius: 12.5px;
+    border: 2px solid hsl(0, 0%, 41%);
+     
+
+}
+#register:hover{
+   
+    color: black;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+}
+.nav-right{
+    position:relative;
+    right: 50px;
+    font-size: 14px;
+
+}
+.sec{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    
+    
+}
+.left{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 95%;
+    
+}
+h1{
+    font-size: 4rem;
+    color: hsl(0, 0%, 8%);
+    padding: 20px 15px;
+}
+p{
+     padding: 8px 15px;
+     color: hsl(0, 0%, 41%);
+     width: 80%;
+     line-height: 24px;
+}
+button{
+    border-radius: 14.5px;
+    background-color: hsl(0, 0%, 10%);
+    color: white;
+    width: 130px;
+    height: 44px;
+    outline: none;
+    border: none;
+    margin: 20px 15px;
+    cursor: pointer;
+    
+}
+.right{
+    width: 55%;
+    height: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(images/image-hero-desktop.png) no-repeat center center/contain;
+    
+
+}
+.hero-img{
+    width: 50%;
+    height: 90%;
+}
+.investors{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 15px;
+    top: 20px;
+}
+.arrow-img{
+    width: 7px;
+    height: 7px;
+    background: url(images/icon-arrow-down.svg) no-repeat center center/contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 6px ;
+    transition: 0.4s;
+}
+#login{
+    width: 80px;
+}
+.box-features{
+    width: 120px;
+    height: 140px;
+    box-shadow: 0 0 10px rgb(180, 180, 180);
+    border-radius: 14px;
+    display: none;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 10vh;
+    left: 11%;
+    background-color: white;
+    flex-direction: column;
+    transition: 0.4s ease-in;
+    z-index: 3;
+
+}
+.box-company{
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 10px rgb(190, 190, 190);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 10vh;
+    left: 21%;
+    display: none ;
+
+    flex-direction: column;
+    
+    z-index: 2;
+}
+.f-li{
+    width: 100%;
+    
+    
+    align-items: center;
+    justify-content: start;
+    font-size: 12.5px;
+    
+   
+}
+.icons{
+    padding: 0 5px;
+}
+button:hover{
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+    font-weight: bold;
+}
+.visible{
+  display: flex;
+}
+.rotate{
+    background: url(images/icon-arrow-up.svg) no-repeat center center/contain;
+}
+#menu{
+   display: none;
+    
+}
+@media screen and (max-width:640px){
+       .container{
+           height: 100%;
+           overflow: hidden;
+       }
+    .sec{
+        flex-direction: column-reverse;
+       
+
+    }
+    ul{
+        flex-direction: column;
+        width: 200px;
+        position:absolute;
+        left: -100%;
+        top: 8vh;
+        background: white;
+        height: 90vh;
+        transition: 0.4s ease-in;
+        justify-content:flex-start;
+        
+        
+
+    }
+    nav{
+        height: 8vh;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+    .logo{
+        padding: 0%;
+        margin: 0%;
+        width: 120px;
+        
+    }
+    .nav-right{
+        display: none;
+    }
+    .left{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        height: 50%;
+    }
+    h1{
+        margin: 0%;
+        font-size: 2.5rem;
+        padding: 10px 5px;
+    }
+    .right{
+        width: 100%;
+        height: 50%;
+        background: url(images/image-hero-mobile.png) no-repeat center center/cover;
+    }
+    .investors{
+        padding: 0%;
+        margin: 0%;
+        left: 0%;
+        justify-content: space-evenly;
+        width: 80%;
+        height: 10%;
+        
+    }
+    
+    p{
+        padding: 0%;
+
+    }
+    #menu{
+        display: flex;
+        position: relative;
+        right: 20px;
+        width: 30px;
+        height: 40px;
+        align-items: center;
+        justify-content: center;
+        background: url(images/icon-menu.svg) no-repeat center center/contain;
+        transition: 0.4s ease;
+    }
+    .showUl{
+        left: 0%;
+        z-index: 2;
+        box-shadow: 5px 2px 10px grey;
+    }
+    .box-company{
+       left:  25%;
+       top: 15vh;
+       box-shadow: 0 0 10px rgb(98, 0, 255);
+    }
+    .box-features{
+        left: 28%;
+        top: 10vh;
+       
+    }
+    .closeMenu{
+        background: url(images/icon-close-menu.svg) no-repeat center center/contain;
+    }
+
+}
